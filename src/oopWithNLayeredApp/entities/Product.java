@@ -1,18 +1,28 @@
 package oopWithNLayeredApp.entities;
+import java.util.Scanner;
 
 public class Product {
 	
-	private String egitmen;
+	public String egitmen;
+	private String kurs;
 	private String kategori;
 	private double kursFiyat;
 	
-	public Product() {
-	}
+	Scanner input = new Scanner(System.in);
 	
-	public Product(String egitmen, String kategori, double kursFiyat) {
+	public Product() {
 		this.egitmen = egitmen;
 		this.kategori = kategori;
 		this.kursFiyat = kursFiyat;
+		this.kurs = kurs;
+	}
+
+	public String getKurs() {
+		return kurs;
+	}
+
+	public void setKurs(String kurs) {
+		this.kurs = kurs;
 	}
 
 	public String getEgitmen() {
@@ -35,9 +45,11 @@ public class Product {
 		return kursFiyat;
 	}
 
-	public void setKurs(double kursFiyat) {
+	public void setKursFiyat(double kursFiyat) {
 		this.kursFiyat = kursFiyat;
 	}
+
+
 	
 
 }

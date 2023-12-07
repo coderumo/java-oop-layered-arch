@@ -3,7 +3,7 @@ package oopWithNLayeredApp.core.logging;
 public class FileLogger implements Logger {
 
 	@Override
-	public void log(double kursData) {
+	public void logKurs(double kursData) {
 		System.out.println("kurs fiyatı dosyaya loglandı:" + kursData);
 		
 	}
@@ -17,6 +17,12 @@ public class FileLogger implements Logger {
 	@Override
 	public void logKategori(String kategoriData) {
 		System.out.println("kategori dosyaya loglandı:" + kategoriData);
+		
+	}
+
+	@Override
+	public void logKurs(String kursData) {
+		System.out.println("kategori dosyaya loglandı:" + kursData);
 		
 	}
 

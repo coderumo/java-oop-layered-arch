@@ -3,7 +3,7 @@ package oopWithNLayeredApp.core.logging;
 public class DataBaseLogger implements Logger{
 
 	@Override
-	public void log(double kursData) {
+	public void logKurs(double kursData) {
 		System.out.println("kurs fiyatı veritabanına loglandı:" + kursData);		
 	}
 
@@ -16,6 +16,12 @@ public class DataBaseLogger implements Logger{
 	@Override
 	public void logKategori(String kategoriData) {
 		System.out.println("kategori veritabanına loglandı:" + kategoriData);		
+		
+	}
+
+	@Override
+	public void logKurs(String kursData) {
+		System.out.println("kategori veritabanına loglandı:" + kursData);		
 		
 	}
 	
